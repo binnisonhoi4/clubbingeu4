@@ -1,0 +1,29 @@
+government = monarchy
+add_government_reform = feudalism_reform
+primary_culture = hungarian
+add_accepted_culture = slovak
+add_accepted_culture = transylvanian
+religion = catholic
+technology_group = eastern
+historical_rival = BOH
+capital = 153 # Buda
+historical_friend = HAB
+
+change_estate_land_share = {
+	estate = estate_church
+	share = -5
+}
+
+1444.1.1 = {
+	monarch = {
+		name = "Mike"
+		dynasty = "von Boomer"
+		culture = austrian
+		birth_date = 1310.1.1		
+		adm = 8
+		dip = 8
+		mil = 8
+	}
+		clear_scripted_personalities = yes
+		add_ruler_personality = immortal_personality
+	}
