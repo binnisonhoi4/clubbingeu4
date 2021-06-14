@@ -17,6 +17,7 @@ christian = {
 	
 	
 	catholic = {
+		declare_war_in_regency = yes
 		color = { 204 204 0 }
 		icon = 1
 		allowed_conversion = {
