@@ -10,9 +10,9 @@ religious_school = shafii_school
 1444.1.1 = {
 	monarch = {
 		name= "Arliqo"
+		adm = 6
 		dip = 6
 		mil = 6
-		adm = 6
 	}
 	add_piety = 0.75
 }
