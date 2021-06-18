@@ -529,8 +529,6 @@ was_never_end_game_tag_trigger = {	#Country Scope
 			NOT = { was_tag = SYN }
 			NOT = { was_tag = ADU }
 			NOT = { was_tag = LOT }
-			NOT = { was_tag = AHU }
-			NOT = { was_tag = SIA }
 			NOT = { tag = MUG }
 			NOT = { tag = TUR }
 			NOT = { tag = BYZ }
@@ -555,8 +553,6 @@ was_never_end_game_tag_trigger = {	#Country Scope
 			NOT = { tag = SYN }
 			NOT = { tag = ADU }
 			NOT = { tag = LOT }
-			NOT = { tag = AHU }
-			NOT = { tag = SIA }
 			NOT = { tag = WUU }
 			NOT = { tag = CXI }
 			NOT = { tag = YUE }
