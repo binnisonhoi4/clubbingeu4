@@ -1,7 +1,17 @@
 government = monarchy
-add_government_reform = h_reform_prefecture
-government_rank = 1
+add_government_reform = autocracy_reform
 technology_group = chinese
 religion = confucianism
 primary_culture = sichuanese
-capital = 4868 #Longmenshan
+capital = 679	#Chengdu
+
+1444.11.11 = {
+	monarch = {
+		name = "Chengdu"
+		dynasty = "Shu"
+		birth_date = 1420.1.1
+		adm = 4
+		dip = 5
+		mil = 4
+	}
+}

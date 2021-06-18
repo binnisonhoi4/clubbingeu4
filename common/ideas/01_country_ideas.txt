@@ -38,40 +38,40 @@ MSA_ideas = {
     }
 }
 
-#SOM_ideas = {
-#    start = {
-#        core_creation = -0.1
-#        land_morale = 0.1
-#    }
-#    bonus = {
-#        heir_chance = 0.33
-#    }
-#    trigger = {
-#        tag = SOM
-#    }
-#    free = yes
-#    SOM_1 = {
-#        fort_maintenance_modifier = -0.01
-#    }
-#    SOM_2 = {
-#        discipline = 0.05
-#    }
-#    SOM_3 = {
-#        trade_efficiency = 0.10
-#    }
-#    SOM_4 = {
-#        global_manpower_modifier = 0.10
-#    }
-#    SOM_5 = {
-#        colonists = 1
-#    }
-#    SOM_6 = {
-#        development_cost = -0.10
-#    }
-#    SOM_7 = {
-#        global_trade_goods_size_modifier = 0.10
-#    }
-#}
+SOM_ideas = {
+    start = {
+        core_creation = -0.1
+        land_morale = 0.1
+    }
+    bonus = {
+        heir_chance = 0.33
+    }
+    trigger = {
+        tag = SOM
+    }
+    free = yes
+    SOM_1 = {
+        fort_maintenance_modifier = -0.01
+    }
+    SOM_2 = {
+        discipline = 0.05
+    }
+    SOM_3 = {
+        trade_efficiency = 0.10
+    }
+    SOM_4 = {
+        global_manpower_modifier = 0.10
+    }
+    SOM_5 = {
+        colonists = 1
+    }
+    SOM_6 = {
+        development_cost = -0.10
+    }
+    SOM_7 = {
+        global_trade_goods_size_modifier = 0.10
+    }
+}
 
 ###########################################
 # Formable CN Ideas
