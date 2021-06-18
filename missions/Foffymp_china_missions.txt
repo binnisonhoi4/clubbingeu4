@@ -1,0 +1,376 @@
+########################################
+# Custom China missions for the HashMP CE Multiplayer mod
+#
+# by Foffy123
+########################################
+
+h_china_all = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		culture_group = east_asian
+	}
+	
+	h_china_wonders = { #Wonders of China
+		icon = mission_japanese_fort
+		position = 3
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1816
+				province_id = 4793
+				province_id = 4794
+				province_id = 680
+				province_id = 726
+				province_id = 667
+				province_id = 684
+				province_id = 662
+				province_id = 4861
+				province_id = 1821
+				province_id = 682
+				province_id = 700
+				province_id = 1829
+			}
+		}
+		trigger = {
+			calc_true_if = {
+				all_owned_province = {
+					is_core = ROOT
+					has_province_modifier = h_commandery_province
+				}
+				amount = 10
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "h_china_wonders"
+				duration = 9125
+			}
+			add_adm_power = 100
+			add_dip_power = 100
+			add_mil_power = 100
+		}
+	}
+}
+
+h_csh_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = CSH
+	}
+	has_country_shield = yes
+	
+	h_csh_starter = { #Rise of Shun
+		icon = mission_manchu_warrior
+		position = 1
+		trigger = {
+			army_size_percentage = 1
+		}
+		effect = {
+			add_country_modifier = {
+				name = "h_warlord_startmod"
+				duration = 3650
+			}
+			gansu_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			country_event = { id = foffychina.1 } #Ruler Event
+		}
+	}
+}
+
+h_cxi_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = CXI
+	}
+	has_country_shield = yes
+	
+	h_cxi_starter = { #Rise of Xi
+		icon = mission_manchu_warrior
+		position = 1
+		trigger = {
+			army_size_percentage = 1
+		}
+		effect = {
+			add_country_modifier = {
+				name = "h_warlord_startmod"
+				duration = 3650
+			}
+			if = {
+				limit = {
+					4936 = {
+						NOT = {
+							is_permanent_claim = ROOT
+							is_core = ROOT
+						}
+					}
+				}
+				4936 = {
+					add_permanent_claim = ROOT
+				}
+			}
+			if = {
+				limit = {
+					1836 = {
+						NOT = {
+							is_permanent_claim = ROOT
+							is_core = ROOT
+						}
+					}
+				}
+				1836 = {
+					add_permanent_claim = ROOT
+				}
+			}
+			if = {
+				limit = {
+					4953 = {
+						NOT = {
+							is_permanent_claim = ROOT
+							is_core = ROOT
+						}
+					}
+				}
+				4953 = {
+					add_permanent_claim = ROOT
+				}
+			}
+			country_event = { id = foffychina.2 } #Ruler Event
+		}
+	}
+}
+
+h_cyi_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = CYI
+	}
+	has_country_shield = yes
+	
+	h_cyi_starter = { #Rise of Yi
+		icon = mission_manchu_warrior
+		position = 1
+		trigger = {
+			army_size_percentage = 1
+		}
+		effect = {
+			add_country_modifier = {
+				name = "h_warlord_startmod"
+				duration = 3650
+			}
+			if = {
+				limit = {
+					675 = {
+						NOT = {
+							is_permanent_claim = ROOT
+							is_core = ROOT
+						}
+					}
+				}
+				675 = {
+					add_permanent_claim = ROOT
+				}
+			}
+			if = {
+				limit = {
+					674 = {
+						NOT = {
+							is_permanent_claim = ROOT
+							is_core = ROOT
+						}
+					}
+				}
+				674 = {
+					add_permanent_claim = ROOT
+				}
+			}
+			country_event = { id = foffychina.3 } #Ruler Event
+		}
+	}
+}
+
+h_qic_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = QIC
+	}
+	has_country_shield = yes
+	
+	h_qic_starter = { #Rise of Qi
+		icon = mission_manchu_warrior
+		position = 1
+		trigger = {
+			army_size_percentage = 1
+		}
+		effect = {
+			add_country_modifier = {
+				name = "h_warlord_startmod"
+				duration = 3650
+			}
+			shandong_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			country_event = { id = foffychina.4 } #Ruler Event
+		}
+	}
+}
+
+h_wuu_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = WUU
+	}
+	has_country_shield = yes
+	
+	h_wuu_starter = { #Rise of Wu
+		icon = mission_manchu_warrior
+		position = 1
+		trigger = {
+			army_size_percentage = 1
+		}
+		effect = {
+			add_country_modifier = {
+				name = "h_warlord_startmod"
+				duration = 3650
+			}
+			country_event = { id = foffychina.5 } #Ruler Event
+			zhejiang_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
+	
+h_wuu_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = WUU
+	}
+	has_country_shield = yes
+	
+	h_wuu_admiralty = { #Armada of Wu
+		icon = mission_establish_high_seas_navy
+		position = 4
+		trigger = {
+			num_of_heavy_ship = 100
+		}
+		effect = {
+			add_country_modifier = {
+				name = "h_wu_armada"
+				duration = -1
+			}
+		}
+	}
+}
+	
+#	h_wuu_starter = { #Strike the Serpent
+#		icon = mission_manchu_warrior
+#		position = 2
+#		trigger = {
+#			army_size_percentage = 1
+#		}
+#		effect = {
+#			add_country_modifier = {
+#				name = "h_warlord_startmod"
+#				duration = 3650
+#			}
+#			if = {
+#				limit = {
+#					4831 = {
+#						NOT = {
+#							is_permanent_claim = ROOT
+#							is_core = ROOT
+#						}
+#					}
+#				}
+#				4831 = {
+#					add_permanent_claim = ROOT
+#				}
+#			}
+#			if = {
+#				limit = {
+#					4694 = {
+#						NOT = {
+#							is_permanent_claim = ROOT
+#							is_core = ROOT
+#						}
+#					}
+#				}
+#				4694 = {
+#					add_permanent_claim = ROOT
+#				}
+#			}
+#			if = {
+#				limit = {
+#					4753 = {
+#						NOT = {
+#							is_permanent_claim = ROOT
+#							is_core = ROOT
+#						}
+#					}
+#				}
+#				4753 = {
+#					add_permanent_claim = ROOT
+#				}
+#			}
+#			country_event = { id = foffychina.5 } #Ruler Event
+#
+#		}
+#	}
+
+h_yue_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = YUE
+	}
+	has_country_shield = yes
+	
+	h_yue_starter = { #Rise of Yue
+		icon = mission_manchu_warrior
+		position = 1
+		trigger = {
+			army_size_percentage = 1
+		}
+		effect = {
+			add_country_modifier = {
+				name = "h_warlord_startmod"
+				duration = 3650
+			}
+			yanshan_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			country_event = { id = foffychina.6 } #Ruler Event
+		}
+	}
+}
