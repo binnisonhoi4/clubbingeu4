@@ -1,14 +1,14 @@
 #2406 - Jianchang
 
-owner = YUN
-controller = YUN
-add_core = YUN
+owner = CDL
+controller = CDL
+add_core = CDL
 culture = yi
-religion = buddhism
+religion = animism
 capital = "Jianchang"
-trade_goods = tropical_wood
+trade_goods = grain
 hre = no
-base_tax = 3 
+base_tax = 2 
 base_production = 2
 base_manpower = 2
 is_city = yes

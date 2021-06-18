@@ -30,12 +30,6 @@ monarchy = {
 				revolutionary_empire_reform
 				holy_state_reform
 				austrian_archduchy_reform
-				h_reform_warlord_1
-				h_reform_prefecture
-				h_reform_citystate
-				h_reform_warlord_2
-				h_reform_warlord_3
-				h_reform_warlord_4
 			}
 		}
 		hereditary_vs_nobility = {
@@ -159,7 +153,6 @@ monarchy = {
 		military_dictatorship_reform
 		protectorate_parliament_reform
 		prussian_republic_reform
-		admiralty_reform
 		nepotism_reform
 		lottery_reform
 		dutch_republic
@@ -256,7 +249,6 @@ republic = {
 				protectorate_parliament_reform
 				prussian_republic_reform
 				united_cantons_reform
-				h_reform_commandery
 			}
 		}
 		republican_virtues = {
@@ -328,7 +320,6 @@ republic = {
 			reforms = {
 				landholders_reform
 				citizenry_reform
-				admiralty_reform
 				equal_electorate_reform
 				three_classes_reform
 				military_electorate_reform
@@ -373,7 +364,6 @@ republic = {
 		venice_merchants_reform
 		dutch_republic
 		pirate_republic_reform
-		admiralty_reform
 		prussian_republic_reform
 		military_dictatorship_reform
 	}
@@ -739,38 +729,6 @@ pre_dharma_mapping = {
 		legacy_government = pirate_republic
 	}
 	all_mechanics = {
-		government = monarchy
-		legacy_government = despotic_monarchy
-	}
-	h_reform_commandery = {
-		government = republic
-		legacy_government = oligarchic_republic
-	}
-	h_reform_prefecture = {
-		government = monarchy
-		legacy_government = despotic_monarchy
-	}
-	h_reform_warlord_1 = {
-		government = monarchy
-		legacy_government = despotic_monarchy
-	}
-	h_reform_citystate = {
-		government = monarchy
-		legacy_government = despotic_monarchy
-	}
-	h_reform_native_empire = {
-		government = monarchy
-		legacy_government = despotic_monarchy
-	}
-	h_reform_warlord_2 = {
-		government = monarchy
-		legacy_government = despotic_monarchy
-	}
-	h_reform_warlord_3 = {
-		government = monarchy
-		legacy_government = despotic_monarchy
-	}
-	h_reform_warlord_4 = {
 		government = monarchy
 		legacy_government = despotic_monarchy
 	}

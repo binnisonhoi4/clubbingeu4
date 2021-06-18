@@ -2,6 +2,10 @@
 # scriptable and usable for event-system below.
 ##################################################################################################
 
+spot_i_cant_have_kids = {
+	heir_chance = -100
+}
+
 national_bank_interest = {
 	interest = -0.5
 }
@@ -1160,7 +1164,7 @@ navigator_boost = {
 }
 
 grand_captain_boost = {
-	land_morale = 0.20
+	land_morale = 0.1
 }
 
 army_organiser_boost = {
@@ -1168,7 +1172,7 @@ army_organiser_boost = {
 }
 
 commandant_boost = {
-	discipline = 0.1
+	discipline = 0.05
 }
 
 quartermaster_boost = {
@@ -1510,8 +1514,6 @@ papal_blessing = {
 
 papal_sanction_for_holy_war = {
 	manpower_recovery_speed = 0.15
-	land_morale = 0.05
-	discipline = 0.025
 	religion = yes
 }
 
@@ -11197,11 +11199,11 @@ colony_inspired_by_revolution = {
 
 estate_cossacks_prime_herding_rights_mod = {
 	local_tax_modifier = -0.5
-	local_manpower_modifier = 0.5
+	local_manpower_modifier = 1
 }
 
 estate_cossacks_exploration_expedition_mod = {
-	local_development_cost = -0.075
+	local_development_cost = -0.15
 }
 
 shortage_of_officers = {

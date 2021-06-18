@@ -1,17 +1,17 @@
 # 189 Lothringen - Principal cities: Nancy
 
-owner = BUR
-controller = BUR 
+owner = LOR
+controller = LOR 
 capital = "Nancy"
 is_city = yes
 culture = burgundian
 religion = catholic
-hre = yes
+hre = no
 base_tax = 5 
 base_production = 5
 trade_goods = iron
 base_manpower = 5
-add_core = BUR
+add_core = LOR
 
 
 

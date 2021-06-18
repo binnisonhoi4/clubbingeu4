@@ -58,7 +58,7 @@ temple = {
 	cost = 100
 	time = 12
 	modifier = {
-		local_tax_modifier = 0.5
+		local_tax_modifier = 0.4
 	}
 
 	ai_will_do = {
@@ -330,7 +330,7 @@ cathedral = {
 	time = 12
 	modifier = {
 		local_missionary_strength = 0.03
-		local_tax_modifier = 1
+		local_tax_modifier = 0.6
 	}
 
 	ai_will_do = {
@@ -554,7 +554,6 @@ town_hall = {
 		local_state_maintenance_modifier = -0.5
 		local_autonomy = -0.2
 		local_governing_cost = -0.5
-		allowed_num_of_buildings = 1
 	}
 
 	ai_will_do = {

@@ -505,6 +505,7 @@ was_never_end_game_tag_trigger = {	#Country Scope
 	OR = {
 		NOT = { end_game_tags_blocked = yes }
 		AND = {
+<<<<<<< HEAD
 			NOT = { was_tag = MUG }
 			NOT = { was_tag = TUR }
 			NOT = { was_tag = BYZ }
@@ -529,8 +530,6 @@ was_never_end_game_tag_trigger = {	#Country Scope
 			NOT = { was_tag = SYN }
 			NOT = { was_tag = ADU }
 			NOT = { was_tag = LOT }
-			NOT = { was_tag = AHU }
-			NOT = { was_tag = SIA }
 			NOT = { tag = MUG }
 			NOT = { tag = TUR }
 			NOT = { tag = BYZ }
@@ -555,14 +554,15 @@ was_never_end_game_tag_trigger = {	#Country Scope
 			NOT = { tag = SYN }
 			NOT = { tag = ADU }
 			NOT = { tag = LOT }
-			NOT = { tag = AHU }
-			NOT = { tag = SIA }
 			NOT = { tag = WUU }
 			NOT = { tag = CXI }
 			NOT = { tag = YUE }
 			NOT = { tag = CYI }
 			NOT = { tag = CSH }
 			NOT = { tag = QIC }
+=======
+			NOT = { tag = MNG }
+>>>>>>> parent of a9cf76a (China reforms)
 		}
 	}
 }
@@ -1087,7 +1087,7 @@ will_leave_for_shadow_kingdom_trigger = {
 			}
 			has_opinion = {
 				who = emperor
-				value = 150
+				value = -200
 			}
 			is_subject_of = emperor
 			has_reform = free_city

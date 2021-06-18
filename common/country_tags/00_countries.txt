@@ -953,3 +953,6 @@ SYN = "countries/Synthetics.txt"
 #ISR = countries/Israel.txt
 #TEM = countries/KnightsTemplar.txt
 #TRL = countries/Trapalanda.txt
+
+#Chosen's Retard Shit
+SOM = countries/Somalia.txt

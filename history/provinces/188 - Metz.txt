@@ -4,18 +4,18 @@ latent_trade_goods = {
 	coal
 }
 
-owner = BUR
-controller = BUR 
+owner = LOR
+controller = LOR 
 capital = "Metz"
 is_city = yes
 culture = burgundian
 religion = catholic
-hre = yes
+hre = no
 base_tax = 6 
 base_production = 6
 trade_goods = glass
 base_manpower = 5
-add_core = BUR
+add_core = LOR
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim

@@ -1,2 +1,0 @@
-AHU = "countries/Austria-Hungary.txt"
-SIA = "countries/Siam.txt"

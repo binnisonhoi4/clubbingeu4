@@ -470,12 +470,7 @@ prussian_republic = {
 		global_unrest = -2
 		global_autonomy = -0.075
 		republican_tradition = -0.5
-		governing_capacity_modifier = -0.5
-	}
-	
-	conditional = {
-		allow = { has_dlc = "Rights of Man" }
-		militarised_society = yes
+		governing_capacity_modifier = -0.2
 	}
 	
 	custom_attributes = {
@@ -1216,7 +1211,7 @@ steppe_horde_legacy = {
 		loot_amount = 0.50
 		global_institution_spread = -0.15
 		reinforce_cost_modifier = -0.5
-		cavalry_cost = -0.10
+		cav_to_inf_ratio = 0.25
 		movement_speed = 0.2
 	}
 	ai = {
@@ -1249,7 +1244,7 @@ great_mongol_state_legacy = {
 		land_forcelimit_modifier = 0.2
 		loot_amount = 0.50
 		reinforce_cost_modifier = -0.5
-		cavalry_cost = -0.10
+		cav_to_inf_ratio = 0.25
 		movement_speed = 0.2
 	}
 	conditional = {
@@ -1324,7 +1319,7 @@ tribal_federation_legacy = {
 	monarchy = yes
 	modifiers = {
 		years_of_nationalism = -5
-		cavalry_cost = -0.10
+		cav_to_inf_ratio = 0.25
 		province_warscore_cost = -0.10
 	}
 
@@ -1883,12 +1878,7 @@ prussian_monarchy_legacy = {
 		global_autonomy = -0.075
 		max_absolutism = 10
 		monarch_military_power = 3
-		governing_capacity_modifier = -0.5
-	}
-
-	conditional = {
-		allow = { has_dlc = "Rights of Man" }
-		militarised_society = yes
+		governing_capacity_modifier = -0.2
 	}
 
 	ai = {
@@ -2406,7 +2396,8 @@ cossacks_legacy_reform = {
 	modifiers = {
    		governing_capacity = 50
 		cavalry_power = 0.2
-		cavalry_cost = -0.30
+		cavalry_cost = -0.2
+		cav_to_inf_ratio = 0.2
 	}
 
 	conditional = {

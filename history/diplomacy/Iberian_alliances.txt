@@ -1,3 +1,19 @@
+# Spot aragon and castille
+union =  {
+	first = CAS
+	second = ARA
+	start_date = 1444.1.1
+	end_date = 1448.6.20
+}
+
+# Spot castille nav vassal
+vassal = {
+	first = CAS
+	second = NAV
+	start_date = 1444.1.1
+	end_date = 1532.8.3
+}
+
 # Navarra under John II of Aragon
 union =  {
 	first = ARA
@@ -18,8 +34,8 @@ union = {
 union = {
 	first = CAS
 	second = ARA
-	start_date = 1450.1.1
-	end_date = 1525.1.1
+	start_date = 1479.9.4
+	end_date = 1516.1.23
 }
 
 # Castille-Burgundy Union - Felipe I/Philippe IV
@@ -157,6 +173,7 @@ alliance = {
 	start_date = 1392.2.1
 	end_date = 1409.7.25
 }
+
 # Sicily and Aragon
 union = {
 	first = ARA

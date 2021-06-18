@@ -25,7 +25,7 @@ christian = {
 		}
 		country = {
 			tolerance_own = 1
-			tolerance_heretic = -1
+			discipline = 0.025
 		}
 		
 		country_as_secondary = {
@@ -128,7 +128,7 @@ christian = {
 			# Papal Actions below!
 			
 			levy_church_tax = {
-				cost = 40
+				cost = 50
 				potential = {
 					NOT = { tag = PAP }
 				}
@@ -147,7 +147,7 @@ christian = {
 				}				
 			}			
 			bless_monarch = {
-				cost = 40
+				cost = 50
 				potential = {
 					NOT = { tag = PAP }
 				}
@@ -167,7 +167,7 @@ christian = {
 				}
 			}
 			indulgence_for_sins = {
-				cost = 40
+				cost = 50
 				potential = {
 					government = monarchy
 					NOT = { tag = PAP }
@@ -188,7 +188,7 @@ christian = {
 				}
 			}	
 			local_saint = {
-				cost = 60
+				cost = 100
 				potential = {
 					NOT = { tag = PAP }
 				}
@@ -208,7 +208,7 @@ christian = {
 				}
 			}
 			forgiveness_for_usury = {
-				cost = 40
+				cost = 50
 				potential = {
 					NOT = { tag = PAP }
 				}
@@ -231,7 +231,7 @@ christian = {
 				}
 			}			
 			proclaim_holy_war = {
-				cost = 40
+				cost = 50
 				potential = {
 					NOT = { tag = PAP }
 				}
@@ -255,7 +255,7 @@ christian = {
 				}
 			}
 			send_papal_legate = {
-				cost = 40
+				cost = 50
 				potential = {
 					NOT = { tag = PAP }
 					is_papal_controller = no
@@ -275,7 +275,7 @@ christian = {
 				}
 			}	
 			sanction_commercial_monopoly = {
-				cost = 40
+				cost = 50
 				potential = {
 					NOT = { tag = PAP }
 				}
@@ -295,7 +295,7 @@ christian = {
 				}
 			}
 			investigate_heresy = {
-				curia_treasury_cost = 500
+				curia_treasury_cost = 500000
 				potential = {
 					has_dlc = "Emperor"
 					is_papal_controller = yes
@@ -666,7 +666,7 @@ christian = {
 
 			icon_michael = {
 				discipline = 0.05
-				manpower_recovery_speed = 0.05
+				manpower_recovery_speed = 0.1
 				
 				allow = {
 					always = yes
@@ -717,8 +717,8 @@ christian = {
 			}
 
 			icon_pancreator = {
-				development_cost = -0.05
-				build_cost = -0.05
+				development_cost = -0.10
+				build_cost = -0.1
 				
 				allow = {
 					always = yes
@@ -831,7 +831,7 @@ muslim = {
 
 			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
 			can_invite_scholar = {
-				
+				adm_power_cost = 50
 				if = {
 					limit = {
 						NOT = { religion = sunni }
@@ -851,7 +851,7 @@ muslim = {
 
 			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
 			on_invite_scholar = {
-				
+				adm_power_cost = 50
 				clear_religious_scholar_modifiers_effect = yes
 				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
 				add_country_modifier = { name = hanafi_scholar_modifier duration = 7300 }
@@ -872,7 +872,7 @@ muslim = {
 
 			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
 			can_invite_scholar = {
-				
+				adm_power_cost = 50
 				if = {
 					limit = {
 						NOT = { religion = sunni }
@@ -892,7 +892,7 @@ muslim = {
 
 			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
 			on_invite_scholar = {
-				
+				adm_power_cost = 50
 				clear_religious_scholar_modifiers_effect = yes
 				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
 				add_country_modifier = { name = hanbali_scholar_modifier duration = 7300 }
@@ -912,7 +912,7 @@ muslim = {
 
 			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
 			can_invite_scholar = {
-				
+				adm_power_cost = 50
 				if = {
 					limit = {
 						NOT = { religion = sunni }
@@ -932,7 +932,7 @@ muslim = {
 
 			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
 			on_invite_scholar = {
-				
+				adm_power_cost = 50
 				clear_religious_scholar_modifiers_effect = yes
 				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
 				add_country_modifier = { name = maliki_scholar_modifier duration = 7300 }
@@ -952,7 +952,7 @@ muslim = {
 
 			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
 			can_invite_scholar = {
-				
+				adm_power_cost = 50
 				if = {
 					limit = {
 						NOT = { religion = sunni }
@@ -972,7 +972,7 @@ muslim = {
 
 			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
 			on_invite_scholar = {
-				
+				adm_power_cost = 50
 				clear_religious_scholar_modifiers_effect = yes
 				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
 				add_country_modifier = { name = shafii_scholar_modifier duration = 7300 }
@@ -993,7 +993,7 @@ muslim = {
 
 			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
 			can_invite_scholar = {
-				
+				adm_power_cost = 50
 				if = {
 					limit = {
 						NOT = { religion = shiite }
@@ -1013,7 +1013,7 @@ muslim = {
 
 			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
 			on_invite_scholar = {
-				
+				adm_power_cost = 50
 				clear_religious_scholar_modifiers_effect = yes
 				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
 				add_country_modifier = { name = ismaili_scholar_modifier duration = 7300 }
@@ -1036,7 +1036,7 @@ muslim = {
 
 			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
 			can_invite_scholar = {
-				
+				adm_power_cost = 50
 				if = {
 					limit = {
 						NOT = { religion = shiite }
@@ -1056,7 +1056,7 @@ muslim = {
 
 			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
 			on_invite_scholar = {
-				
+				adm_power_cost = 50
 				clear_religious_scholar_modifiers_effect = yes
 				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
 				add_country_modifier = { name = jafari_scholar_modifier duration = 7300 }
@@ -1076,7 +1076,7 @@ muslim = {
 
 			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
 			can_invite_scholar = {
-				
+				adm_power_cost = 50
 				if = {
 					limit = {
 						NOT = { religion = shiite }
@@ -1096,7 +1096,7 @@ muslim = {
 
 			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
 			on_invite_scholar = {
-				
+				adm_power_cost = 50
 				clear_religious_scholar_modifiers_effect = yes
 				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
 				add_country_modifier = { name = zaidi_scholar_modifier duration = 7300 }
@@ -1116,7 +1116,7 @@ muslim = {
 		color = { 0 153 0 }
 		icon = 5
 		country = {
-			cavalry_cost = -0.05
+			cav_to_inf_ratio = 0.10
 			heir_chance = 1.0
 		}
 		country_as_secondary = {
@@ -1178,9 +1178,7 @@ muslim = {
 }
 
 eastern = {
-	
-	defender_of_faith = yes
-	
+
 	flags_with_emblem_percentage = 33
 	flag_emblem_index_range = { 58 80 }
 
@@ -1317,7 +1315,6 @@ eastern = {
 }
 
 dharmic = {
-	defender_of_faith = yes
 
 	flags_with_emblem_percentage = 33
 	flag_emblem_index_range = { 61 82 } #Many shared with Eastern
@@ -1394,8 +1391,7 @@ dharmic = {
 }
 
 pagan = {
-	defender_of_faith = yes
-	
+
 	flags_with_emblem_percentage = 10
 	flag_emblem_index_range = { 83 96 }
 
@@ -1546,7 +1542,7 @@ pagan = {
 		icon = 27
 		color = { 25 76 217 }
 		country = {
-			cavalry_cost = -0.15
+			cav_to_inf_ratio = 0.25
 			global_regiment_cost = -0.2
 		}
 		can_have_secondary_religion = yes
@@ -1558,7 +1554,6 @@ pagan = {
 }
 
 jewish_group = {
-	defender_of_faith = yes
 
 	flags_with_emblem_percentage = 33
 	flag_emblem_index_range = { 106 107 }
@@ -1589,8 +1584,6 @@ jewish_group = {
 
 
 zoroastrian_group = {
-	defender_of_faith = yes
-	
 	flag_emblem_index_range = { 110 110 }
 	zoroastrian = {
 		icon = 26

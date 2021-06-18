@@ -1,12 +1,13 @@
 government = monarchy
 add_government_reform = feudalism_reform
-government_rank = 2
+government_rank = 1
 primary_culture = burgundian
 add_accepted_culture = wallonian
 religion = catholic
 technology_group = western
 capital = 192	# Dijon
 add_army_professionalism = 0.1
+historical_rival = HAB
 
 1363.1.1 = {
 	monarch = {
@@ -117,12 +118,16 @@ add_army_professionalism = 0.1
 		dynasty = "de Bourgogne"
 		birth_date = 1433.11.10
 		adm = 2
-		dip = 2
+		dip = 0
 		mil = 4
 		leader = { name = "Charles I le Téméraire"	type = general	fire = 3	shock = 3	manuever = 3	siege = 1}
 	}
 	set_ruler_flag = is_charles_of_burg_flag
-	
+	add_country_modifier = {
+		name = burgundian_succession_crisis
+		duration = -1
+		hidden = yes
+	}
 	clear_scripted_personalities = yes
 	add_ruler_personality = bold_fighter_personality
 	add_heir_personality = benevolent_personality
