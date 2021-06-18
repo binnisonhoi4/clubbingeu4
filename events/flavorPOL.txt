@@ -17,6 +17,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
+		NOT = {	num_of_estate_privileges = { estate = estate_nobles	value = 4 } }
 		OR = {
 			AND = {
 				tag = POL
@@ -194,6 +195,7 @@ country_event = {
 	
 	is_triggered_only = yes	
 	trigger = {
+		NOT = {	num_of_estate_privileges = { estate = estate_nobles	value = 4 } }
 		has_reform = elective_monarchy
 		NOT = { has_country_flag = pol_pact_conventa_flag }
 		OR = {
@@ -1702,12 +1704,15 @@ country_event = {
 		ai_chance = { 
 			factor = 25
 		}
-		set_country_flag = spot_localnoble
 		define_ruler = {
-			DIP = 6
-			ADM = 6
-			MIL = 6
+			DIP = 3
+			ADM = 3
+			MIL = 4
+			max_random_adm = 5
+			max_random_dip = 5
+			max_random_mil = 6
 			claim = 100
+			age = 26
 			culture = polish
 		}
 		if = {
@@ -1716,12 +1721,12 @@ country_event = {
 			}
 			change_statists_vs_orangists = 1
 		}
-		#LIT = {
-		#	add_opinion = {
-		#		who = ROOT
-		#		modifier = lit_denied_birthright
-		#	}
-		#}
+		LIT = {
+			add_opinion = {
+				who = ROOT
+				modifier = lit_denied_birthright
+			}
+		}
 	}
 }
 
@@ -1735,6 +1740,10 @@ country_event = {
 	
 	fire_only_once = yes
 	is_triggered_only = yes
+
+	trigger = {
+		NOT = {	num_of_estate_privileges = { estate = estate_nobles	value = 4 } }
+	}
 	
 	option = {
 		name = flavor_pol.20.a

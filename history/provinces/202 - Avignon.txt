@@ -22,6 +22,7 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
+
 1670.1.1 = { add_core = FRA } # Louis XIV wants to annex the city-state (Chambres de Réunion)
 1791.9.14 = {
 	owner = FRA

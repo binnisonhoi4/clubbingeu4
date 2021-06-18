@@ -3,7 +3,7 @@ add_government_reform = feudalism_reform
 technology_group = western
 unit_type = western
 primary_culture = swedish
-religion = orthodox 
+religion = catholic
 add_accepted_culture = finnish
 capital = 1	#Stockholm
 
@@ -18,26 +18,14 @@ change_estate_land_share = {
 	share = 10
 }
 
-1443.6.20 = {
-	monarch = {
-		name = "Karl VII"
-		dynasty = "Bonde"
-		birth_date = 1427.10.5
-		adm = 3
-		dip = 3
-		mil = 5
-	}
-}
-
-
-1448.6.20 = {
+1444.1.1 = {
 	monarch = {
 		name = "Karl VIII"
 		dynasty = "Bonde"
 		birth_date = 1409.10.5
 		adm = 3
-		dip = 0
-		mil = 2
+		dip = 3
+		mil = 4	
 		leader = {	name = "Karl VIII"   type = general	fire = 2	shock = 2	manuever = 3	siege = 0 }
 	}
 	queen = {

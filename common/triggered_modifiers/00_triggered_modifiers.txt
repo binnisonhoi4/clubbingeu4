@@ -370,7 +370,7 @@ submission_to_emperor = {
 	potential = {
 		has_global_flag = italians_leave_hre
 		NOT = { has_country_flag = reined_in_for_shadow_kingdom }
-		is_part_of_hre = no
+		is_part_of_hre = yes
 		culture_group = latin
 	}
 
@@ -378,13 +378,15 @@ submission_to_emperor = {
 		is_emperor = no
 		NOT = { tag = ITA }
 		capital_scope = {
-			is_part_of_hre = no
+			is_part_of_hre = yes
 		}
 		NOT = { is_year = 1550 }
 		NOT = { emperor = { alliance_with = ROOT } }
 	}
 
-	global_unrest = 1
+	global_unrest = 3
+	stability_cost_modifier = 0.1
+	prestige = -1
 }
 
 
@@ -580,70 +582,6 @@ the_mandate_of_heaven_lost = {
 	global_unrest = 10
 }
 
-lost_control_of_beijing = {
-	potential = {
-		has_reform = celestial_empire
-		has_dlc = "Mandate of Heaven"
-	}
-
-	trigger = {
-		OR = {
-			NOT = { owns = 1816 }
-			NOT = { controls = 1816 }
-		}
-	}
-
-	imperial_mandate = -0.05
-}
-
-lost_control_of_nanjing = {
-	potential = {
-		has_reform = celestial_empire
-		has_dlc = "Mandate of Heaven"
-	}
-
-	trigger = {
-		OR = {
-			NOT = { owns = 1821 }
-			NOT = { controls = 1821 }
-		}
-	}
-
-	imperial_mandate = -0.05
-}
-
-lost_control_of_canton = {
-	potential = {
-		has_reform = celestial_empire
-		has_dlc = "Mandate of Heaven"
-	}
-
-	trigger = {
-		OR = {
-			NOT = { owns = 667 }
-			NOT = { controls = 667 }
-		}
-	}
-
-	imperial_mandate = -0.05
-}
-
-waging_war_for_china = {
-	potential = {
-		has_reform = celestial_empire
-		has_dlc = "Mandate of Heaven"
-	}
-
-	trigger = {
-		is_in_war = {
-			attacker_leader = root
-			casus_belli = cb_chinese_unification
-		}
-	}
-	
-	imperial_mandate = 0.05
-}
-
 ##################################################
 # HRE modifiers
 ##################################################
@@ -768,7 +706,7 @@ great_peasants_war_triggered_modifier = {
 		is_part_of_hre = yes
 		NOT = { has_reform = peasants_republic }
 	}
-	global_tax_modifier = -0.01
+	global_unrest = 6
 }
 
 great_peasants_war_concessions_triggered_modifier = {
@@ -792,17 +730,7 @@ great_peasants_war_concessions_triggered_modifier = {
 # Pope is in the empire
 ######################################
 
-pope_in_hre_triggered_modifier = {
-	potential = {
-		PAP = { is_part_of_hre = yes }
-		religion = catholic
-	}
-	trigger = {
-		PAP = { is_part_of_hre = yes }
-		religion = catholic
-		NOT = { is_part_of_hre = yes }
-	}
-}
+(REMOVED)
 
 ######################################
 # The Italian Wars
@@ -861,27 +789,4 @@ defense_of_the_empire_modifier = {
 		}
 	}
 	war_taxes_cost_modifier = -1.0
-}
-
-######################################
-# TCFU Modifiers
-######################################
-player_cn = {
-	potential = {
-		is_colonial_nation = yes
-	}
-	trigger = {
-		was_player = yes
-	}
-	development_cost = 0.15
-}
-
-indian_ae = {
-	potential = {
-		technology_group = indian
-	}
-	trigger = {
-		was_player = yes
-	}
-	ae_impact = 0.30
 }

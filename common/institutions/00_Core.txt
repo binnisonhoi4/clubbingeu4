@@ -26,8 +26,6 @@ feudalism = {
 	history = {
 		is_year = 1000
 		OR = {
-			owner = { technology_group = sub_saharan }
-			owner = { technology_group = central_african }
 			AND = { #If this is changed costs for Nation Designer may also need to be changed.
 				OR = {
 					continent = new_world
@@ -44,6 +42,7 @@ feudalism = {
 						technology_group = muslim
 						technology_group = indian
 						technology_group = chinese
+						technology_group = sub_saharan
 						#technology_group = high_american #Is listed below as High Americans get it regardless of if Nation Designer is used.
 					}
 				}
@@ -60,6 +59,8 @@ feudalism = {
 					culture = omani_culture
 					culture = yemeni_culture
 					culture = swahili
+					culture = songhai
+					culture = mali
 					area = ningguta_area
 					area = jilin_area
 					culture_group = byzantine
@@ -539,6 +540,7 @@ new_world_i = {
 
 	bonus = {
 		global_prov_trade_power_modifier = 0.10
+		colonists = 1
 	}
 
 	trade_company_efficiency = 0.6
@@ -626,8 +628,6 @@ new_world_i = {
 		is_year = 1500
 		OR = {
 			continent = europe
-			continent = asia
-			continent = africa
 		}
 		has_port = yes
 		is_island = no

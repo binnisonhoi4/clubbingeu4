@@ -21,31 +21,80 @@ country_event = {
 		is_free_or_tributary_trigger = yes
 		government = monarchy
 		has_regency = no
+		NOT = { is_year = 1443 }
+		OR = {
+			AND = {
+				has_heir = no
+				is_year = 1821
+			}
+			AND = {
+				has_ruler = "Charles"
+				dynasty = "de Bourgogne"
+				ruler_age = 100
+				NOT = {
+					heir_age = 15
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+
+		modifier = {
+			factor = 0.5
+			is_year = 1473
+		}
 	}
 	
 	option = {
-		name = "incidents_bur_inheritance.0.b"
+		name = "incidents_bur_inheritance.0.a"
+		ai_chance = { 
+			factor = 10
+		}
+		if = {
+			limit = {
+				is_year = 1473
+			}
+			define_heir = {
+				name = "Marie"
+				dynasty = ROOT
+				birth_date = 1457.02.13
+				adm = 4
+				dip = 5
+				mil = 3
+				claim = 95
+				block_disinherit = yes
+				female = yes
+			}
+		}
+		else = {
+			define_heir = {
+				name = "Marie"
+				dynasty = ROOT
+				age = 16
+				adm = 4
+				dip = 5
+				mil = 3
+				claim = 95
+				block_disinherit = yes
+				female = yes
+			}
+		}
 
+		set_heir_flag = mary_is_heir
+	}
+	option = {
+		name = "incidents_bur_inheritance.0.b"
+		ai_chance = { 
+			factor = 10
+		}
 		add_legitimacy = 20
 	}
 }
 
-# Ruler of Burgundy Dies
-country_event = {
-	id = incidents_bur_inheritance.1
-	title = "incidents_bur_inheritance.1.t"
-	desc = "incidents_bur_inheritance.1.desc"
-	picture = DEATH_OF_HEIR_eventPicture
-	
-	major = yes
-	
-	is_triggered_only = yes
-	fire_only_once = yes
-	
-	option = { #stand alone
-		name = "incidents_bur_inheritance.1.a"
-	}
-}
+# Ruler of Burgundy Dies (REMOVED)
+
 
 # France can DoW Burgundy
 

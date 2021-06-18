@@ -393,7 +393,7 @@ iqta = {
 	}
 
 	legacy_equivalent = iqta_legacy
-	queen = no
+	queen = yes
 	modifiers = {
 		vassal_income = 0.33
 		global_tax_modifier = 0.05
@@ -524,7 +524,12 @@ prussian_monarchy = {
 		max_absolutism = 10
 		monarch_military_power = 3
 		nobles_loyalty_modifier = 0.1
-		governing_capacity_modifier = -0.2
+		governing_capacity_modifier = -0.5
+	}
+
+	conditional = {
+		allow = { has_dlc = "Rights of Man" }
+		militarised_society = yes
 	}
 }
 
@@ -601,6 +606,10 @@ tsardom = {
 				NOT = { map_setup = map_setup_random }
 			}
 			AND = {
+				tag = UKR
+				NOT = { map_setup = map_setup_random }
+			}
+			AND = {
 				is_playing_custom_nation = yes
 				have_had_reform = tsardom
 			}
@@ -660,9 +669,9 @@ mamluk_government = {
 		#-50% cost to promote cultures
 		global_autonomy = -0.025
 		monarch_admin_power = 2
-		same_culture_advisor_cost = -0.3
+		same_culture_advisor_cost = -0.25
 		promote_culture_cost = -0.5
-		governing_capacity = 200
+		governing_capacity = 50
 		nobles_influence_modifier = 0.1
 	}
 
@@ -1083,7 +1092,6 @@ enforce_privileges_reform = {
 	}
 	modifiers = {
 		global_manpower_modifier = 0.15
-		land_forcelimit_modifier = 0.1
 	}
 	ai = {
 		factor = 1
@@ -1105,7 +1113,6 @@ quash_noble_power_reform = {
 		nobles_influence_modifier = -0.1
 		maratha_exclusive_influence_modifier = -0.1
 		rajput_exclusive_influence_modifier = -0.1
-		land_forcelimit_modifier = 0.1
 	}
 	ai = {
 		factor = 1

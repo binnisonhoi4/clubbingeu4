@@ -150,7 +150,7 @@ age_of_discovery = {
 
 		ab_cavalry_armies = {
 			modifier = {
-				cav_to_inf_ratio = 0.2
+				cavalry_cost = -0.05
 			}
 			ai_will_do = {
 				factor = 10
@@ -183,7 +183,7 @@ age_of_discovery = {
 				tag = TUR
 			}
 			modifier = {
-				siege_ability = 0.20
+				siege_ability = 0.33
 			}
 			ai_will_do = {
 				factor = 100
@@ -391,7 +391,7 @@ age_of_reformation = {
 				tag = SPA
 			}
 			modifier = {
-				shock_damage_received = -0.15
+				shock_damage_received = -0.3
 			}
 			ai_will_do = {
 				factor = 100
@@ -584,7 +584,7 @@ age_of_absolutism = {
 				tag = FRA
 			}
 			modifier = {
-				fire_damage = 0.1
+				fire_damage = 0.2
 			}
 			ai_will_do = {
 				factor = 100

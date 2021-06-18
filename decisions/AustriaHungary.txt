@@ -1,0 +1,179 @@
+country_decisions = {
+
+	austrian_union = { 
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+			NOT = { has_country_flag = formed_ahu_flag }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { exists = AHU }
+			NOT = { tag = HLR }
+			tag = HAB
+			HUN = {
+				exists = yes
+				ai = yes
+			}
+			OR = {
+			ai = no
+				AND = {
+					senior_union_with = HUN
+					HUN = { #This overlaps with allow for AI, is meant to negate do_not_integrate
+						NOT = { num_of_cities = 32 } #Keep this number the same as in allow. Original 38 +10
+					}
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 73	# Inntal
+				province_id = 134	# Wein
+				province_id = 153	# Pest
+				province_id = 154	# Hont
+				province_id = 157	# Bihar
+				province_id = 1770	# Manhartsberg
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { owned_by = HUN } 
+			}
+		}
+		allow = {
+			HUN = { is_player = no }
+			
+			adm_tech = 10
+			is_subject = no
+			is_nomad = no
+			stability = 1
+			is_at_war = no
+			owns_core_province = 73					# Inntal
+			owns_core_province = 134				# Wein
+			owns_core_province = 1770				# Manhartsberg
+			
+			HUN = { 
+				owns_core_province = 153					# Pest
+				owns_core_province = 154					# Hont
+				owns_core_province = 157					# Bihar
+				NOT = { num_of_cities = 32 } #Keep this number the same as in potential.
+			}
+			
+			senior_union_with = HUN
+		}
+		effect = {
+			change_tag = AHU
+			inherit = HUN
+			if = {
+				limit = { NOT = { accepted_culture = hungarian } }
+				add_accepted_culture = hungarian
+			}
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			if = {
+				limit = {
+					carpathia_region = {
+						NOT = { owned_by = HAB }
+						NOT = { owned_by = HUN }
+						NOT = { owned_by = AHU }
+					}
+				}
+				carpathia_region = {
+					add_permanent_claim = AHU
+				}
+			}
+			set_country_flag = formed_ahu_flag
+			add_prestige = 25
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		
+	}
+	
+	austria_hungary_enforced = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+			NOT = { has_country_flag = formed_ahu_flag }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { exists = AHU }
+			OR = {
+				tag = HAB
+				tag = HUN
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 73	# Inntal
+				province_id = 134	# Wein
+				province_id = 153	# Pest
+				province_id = 154	# Hont
+				province_id = 157	# Bihar
+				province_id = 1770	# Manhartsberg
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			adm_tech = 10
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			stability = 3
+			is_at_war = no
+			owns_core_province = 73						# Inntal
+			owns_core_province = 134					# Wein
+			owns_core_province = 153					# Pest
+			owns_core_province = 154					# Hont
+			owns_core_province = 157					# Bihar
+			owns_core_province = 1770					# Manhartsberg
+			OR = {
+				HAB = { exists = no }
+				HUN = { exists = no }
+			}
+		}
+		effect = {
+			change_tag = AHU
+			if = {
+				limit = { NOT = { accepted_culture = hungarian } }
+				add_accepted_culture = hungarian
+			}
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			if = {
+				limit = {
+					carpathia_region = {
+						NOT = { owned_by = HAB }
+						NOT = { owned_by = HUN }
+						NOT = { owned_by = AHU }
+					}
+				}
+				carpathia_region = {
+					add_permanent_claim = AHU
+				}
+			}
+			set_country_flag = formed_ahu_flag
+			add_prestige = 25
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+	}
+}

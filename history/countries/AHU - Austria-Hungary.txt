@@ -1,0 +1,15 @@
+government = monarchy
+add_government_reform = austrian_archduchy_reform
+government_rank = 2
+primary_culture = austrian
+religion = catholic
+technology_group = western
+capital = 134 # Wien
+historical_rival = TUR
+historical_rival = FRA
+
+add_accepted_culture = slovene
+add_accepted_culture = croatian
+add_accepted_culture = slovak
+add_accepted_culture = transylvanian
+add_accepted_culture = romanian

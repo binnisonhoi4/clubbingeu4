@@ -1,0 +1,22 @@
+name = "War for Sicily"
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 125 # Palermo
+}
+
+1440.1.1 = {
+	add_attacker = NAP
+	add_attacker = ARA
+	add_attacker = TUN
+	add_defender = SIC
+}
+
+
+#Peace and end of war
+1444.1.1 = {
+	rem_attacker = NAP
+	rem_attacker = ARA
+	rem_attacker = TUN
+	rem_defender = SIC
+}
