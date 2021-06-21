@@ -1,8 +1,8 @@
 #2999 - Hormuz
 
-owner = KHO
-controller = KHO
-add_core = KHO
+owner = ORM
+controller = ORM
+add_core = ORM
 capital = "Hormuz"
 culture = gulf_arabic
 religion = sunni

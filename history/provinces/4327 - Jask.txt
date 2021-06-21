@@ -1,7 +1,7 @@
 #4327 - Jask
 
-owner = KHO
-controller = KHO
+owner = ORM
+controller = ORM
 culture = gulf_arabic
 religion = shiite
 capital = "Jask"
@@ -11,7 +11,7 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 is_city = yes
-add_core = KHO
+add_core = ORM
 add_core = TIM
 discovered_by = east_african
 discovered_by = muslim
