@@ -17,6 +17,11 @@ NDefines.NDiplomacy.MONTHS_BEFORE_TOTAL_OCCUPATION = 12
 NDefines.NDiplomacy.CONDOTTIERI_MIN_DURATION = 1
 NDefines.NDiplomacy.CHANGE_RIVAL_YEARS = 10
 NDefines.NDiplomacy.HRE_AUTHORITY_JOIN_EMPIRE = 0
+NDefines.NDiplomacy.PS_MOVE_TRADE_PORT = 50
+NDefines.NDiplomacy.PS_REPLACE_RIVAL = 0
+
+--Economy
+NDefines.NEconomy.DEBASE_MAX_CORRUPTION = 35
 
 ---Country
 NDefines.NCountry.MONARCH_MIN_SKILL = 1
@@ -30,3 +35,4 @@ NDefines.NCountry.MAX_IDEA_GROUPS_FROM_SAME_CATEGORY = 0.4
 --NMilitary
 NDefines.NMilitary.WARGOAL_MAX_BONUS = 40
 NDefines.NMilitary.BASE_MP_TO_MANPOWER = 0.3
+NDefines.NMilitary.ARMY_ATTRITION_AT_SEA = 4
