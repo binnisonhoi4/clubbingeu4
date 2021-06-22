@@ -21,7 +21,9 @@ NDefines.NDiplomacy.PS_MOVE_TRADE_PORT = 50
 NDefines.NDiplomacy.PS_REPLACE_RIVAL = 0
 
 --Economy
-NDefines.NEconomy.DEBASE_MAX_CORRUPTION = 35
+NDefines.NEconomy.DEBASE_MAX_CORRUPTION = 10
+NDefines.NEconomy.COT_DOWNGRADE_PRESTIGE_COST = 0
+NDefines.NEconomy.CARAVAN_POWER_MAX = 30
 
 ---Country
 NDefines.NCountry.MONARCH_MIN_SKILL = 1
@@ -33,6 +35,13 @@ NDefines.NCountry.CALL_ALLY_DECLINE_PRESTIGE_PENALTY = 0
 NDefines.NCountry.MAX_IDEA_GROUPS_FROM_SAME_CATEGORY = 0.4
 NDefines.NCountry.ESTATE_MIN_DISTRIBUTED_CROWNLAND = 30.5
 NDefines.NCountry.MAXIMUM_CONDOTTIERI = 1
+NDefines.NCountry.MINIMUM_POLICY_TIME = 5
+NDefines.NCountry.NAT_FOCUS_YEARS = 15
+NDefines.NCountry.NAT_FOCUS_YEARS_RANK = 0
+NDefines.NCountry.PS_ASSAULT = 0
+NDefines.NCountry.PS_ARTILLERY_BARRAGE = 25
+NDefines.NCountry.PS_NAVAL_BARRAGE = 25
+NDefines.NCountry.PS_GARRISON_SORTIES = 0
 
 --NMilitary
 NDefines.NMilitary.WARGOAL_MAX_BONUS = 40
