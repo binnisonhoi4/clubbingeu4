@@ -1002,8 +1002,8 @@ full_sovereignty_act = {
 		full_idea_group = influence_ideas
 	}	
 	
-	vassal_forcelimit_bonus = 0.5
-	reduced_liberty_desire = 10
+	infantry_power = 0.10
+
 	
 	ai_will_do = {
 		factor = 1
