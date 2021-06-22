@@ -440,6 +440,7 @@ the_spy_discovery_act = {
 	}
 
 	army_tradition_from_battle = 0.50
+	manpower_recovery_speed = 0.10
 
 	ai_will_do = {
 		factor = 1
