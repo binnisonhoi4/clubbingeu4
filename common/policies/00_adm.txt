@@ -439,8 +439,7 @@ the_spy_discovery_act = {
 		full_idea_group = administrative_ideas
 	}
 
-	land_maintenance_modifier = -0.05
-	manpower_recovery_speed = 0.15
+	fire_damage_received = -0.10
 
 	ai_will_do = {
 		factor = 1

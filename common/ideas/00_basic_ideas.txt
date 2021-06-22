@@ -342,7 +342,7 @@ defensive_ideas = {
 		army_tradition = 0.5
 	}
 	military_drill = {
-		land_morale = 0.10
+		land_morale = 0.15
 	}
 	improved_manuever = {
 		leader_land_manuever = 1
@@ -361,7 +361,7 @@ defensive_ideas = {
 		land_attrition = -0.1
 	}
 	improved_foraging = {
-		leader_land_shock = 1
+		reinforce_cost_modifier = -0.1
 	}
 
 	ai_will_do = {
@@ -742,7 +742,7 @@ quality_ideas = {
 	category = MIL
 
 	bonus = {
-		discipline = 0.03
+		discipline = 0.05
 	}
 
 	naval_drill = {
