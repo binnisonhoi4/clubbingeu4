@@ -439,7 +439,7 @@ the_spy_discovery_act = {
 		full_idea_group = administrative_ideas
 	}
 
-	fire_damage_received = -0.10
+	army_tradition_from_battle = 0.40
 
 	ai_will_do = {
 		factor = 1
