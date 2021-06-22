@@ -495,7 +495,7 @@ the_tolerance_act = {
 		full_idea_group = plutocracy_ideas
 	}
 	
-	leader_siege = 1
+	manpower_recovery_speed = 0.20
 
 	ai_will_do = {
 		factor = 1	

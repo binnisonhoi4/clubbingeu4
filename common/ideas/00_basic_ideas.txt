@@ -362,7 +362,7 @@ defensive_ideas = {
 		land_attrition = -0.1
 	}
 	improved_foraging = {
-		reinforce_speed = 0.33
+		leader_land_shock = 1
 	}
 
 	ai_will_do = {
@@ -743,7 +743,7 @@ quality_ideas = {
 	category = MIL
 
 	bonus = {
-		discipline = 0.05
+		discipline = 0.03
 	}
 
 	naval_drill = {
