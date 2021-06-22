@@ -841,8 +841,8 @@ local_militias = {
 		full_idea_group = defensive_ideas
 	}	
 	
-	land_morale = 0.05
-	global_manpower_modifier = 0.2
+	army_tradition_from_battle = 0.25
+	global_manpower_modifier = 0.15
 	
 	ai_will_do = {
 		factor = 1
