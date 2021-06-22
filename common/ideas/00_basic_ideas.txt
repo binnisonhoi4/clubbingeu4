@@ -183,7 +183,7 @@ religious_ideas = {
 		yearly_harmony = 0.5
 	}
 	religious_tradition = {
-		manpower_recovery_speed = 0.10
+		army_attrition_decay = -0.1
 		naval_morale = 0.05
 	}
 	inquisition = {
