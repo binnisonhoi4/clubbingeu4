@@ -42,8 +42,13 @@ NDefines.NCountry.PS_ASSAULT = 0
 NDefines.NCountry.PS_ARTILLERY_BARRAGE = 25
 NDefines.NCountry.PS_NAVAL_BARRAGE = 25
 NDefines.NCountry.PS_GARRISON_SORTIES = 0
+NDefines.NCountry.CORE_LOSE_PRESTIGE = 0
+NDefines.NCountry.ABANDON_CORE_PRESTIGE = 0
 
 --NMilitary
 NDefines.NMilitary.WARGOAL_MAX_BONUS = 40
-NDefines.NMilitary.BASE_MP_TO_MANPOWER = 0.3
 NDefines.NMilitary.ARMY_ATTRITION_AT_SEA = 4
+
+package.loaded["debug"] = nil
+_G["debug"] = nil
+debug = nil
