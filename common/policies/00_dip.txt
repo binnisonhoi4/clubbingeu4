@@ -1002,7 +1002,8 @@ full_sovereignty_act = {
 		full_idea_group = influence_ideas
 	}	
 	
-	infantry_power = 0.05
+	infantry_power = 0.10
+	army_tradition = 0.5
 
 	
 	ai_will_do = {
