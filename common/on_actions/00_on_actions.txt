@@ -48,6 +48,77 @@ on_startup = {
 			disaster = french_revolution
 		}
 	}
+
+	#### Dev click counter ###
+	#ARUMBA LINES
+
+	every_country = {
+		if = {
+			limit = {
+				check_variable = {
+					which = dev_adm_clicks					
+					value = 1
+				}
+			}
+		}
+		else = {
+			set_variable = {
+				which = dev_adm_clicks
+				value = 0
+			}
+		}
+	}
+	
+	every_country = {
+		if = {
+			limit = {
+				check_variable = {
+					which = dev_dip_clicks					
+					value = 1
+				}
+			}
+		}
+		else = {
+			set_variable = {
+				which = dev_dip_clicks
+				value = 0
+			}
+		}
+	}
+	
+	every_country = {
+		if = {
+			limit = {
+				check_variable = {
+					which = dev_mil_clicks					
+					value = 1
+				}
+			}
+		}
+		else = {
+			set_variable = {
+				which = dev_mil_clicks
+				value = 0
+			}
+		}
+	}
+	
+	every_country = {
+		if = {
+			limit = {
+				check_variable = {
+					which = dev_sum_clicks					
+					value = 1
+				}
+			}
+		}
+		else = {
+			set_variable = {
+				which = dev_sum_clicks
+				value = 0
+			}
+		}
+    }
 }
 
 # country
@@ -1489,14 +1560,50 @@ on_dismantle_revolution = {
 
 # province
 on_adm_development = {
+	#ARUMBA LINES
+    hidden_effect = {
+		owner = {
+			change_variable = {
+				which = dev_adm_clicks
+				value = 1
+			}
+			change_variable = {
+				which = dev_sum_clicks
+				value = 1
+			}
+		}
 }
 
 # province
 on_dip_development = {
+	#ARUMBA LINES
+	hidden_effect = {
+		owner = {
+			change_variable = {
+				which = dev_dip_clicks
+				value = 1
+			}
+			change_variable = {
+				which = dev_sum_clicks
+				value = 1
+			}
+		}
 }
 
 # province
 on_mil_development = {
+	#ARUMBA LINES
+    hidden_effect = {
+		owner = {
+			change_variable = {
+				which = dev_mil_clicks
+				value = 1
+			}
+			change_variable = {
+				which = dev_sum_clicks
+				value = 1
+			}
+		}
 }
 
 on_overextension_pulse = {
@@ -3685,6 +3792,40 @@ on_province_owner_change = {
 		remove_province_modifier = sufi_shrine
 	}
 	on_province_owner_change_estate_privileges_effect = yes
+	
+# Coffee mod Colonial Nation Province Ownership
+
+	if = {
+		limit = {
+			owner = {
+				is_colonial_nation = yes
+				capital_scope = {
+					NOT = { colonial_region = ROOT }
+				}
+			}
+		}
+		owner = {
+			colonial_parent = {
+				ROOT = {
+					cede_province = PREV
+				}
+			}
+		}
+	}
+	
+# PR Adjacent fort 182 day fort protection - thanks to Gasior from MJL
+
+	if = {
+		limit = {
+			has_province_flag = PR_new_conquest_fort_delay
+		}
+		clr_province_flag = PR_new_conquest_fort_delay
+	}
+	if = {
+		limit = {
+			fort_level = 2
+		}
+		set_province_flag = PR_new_conquest_fort_delay
 }
 
 # country
