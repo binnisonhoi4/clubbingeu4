@@ -742,7 +742,7 @@ quality_ideas = {
 	category = MIL
 
 	bonus = {
-		discipline = 0.05
+		discipline = 0.03
 	}
 
 	naval_drill = {
