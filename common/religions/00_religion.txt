@@ -24,7 +24,7 @@ christian = {
 			protestant
 		}
 		country = {
-			tolerance_own = 1
+			land_morale 0.05
 			discipline = 0.025
 		}
 		
@@ -317,6 +317,7 @@ christian = {
 	}
 
 	anglican = {
+		declare_war_in_regency = yes
 		color = { 135 77 255 }
 		icon = 28
 
@@ -349,6 +350,7 @@ christian = {
 	}
 	
 	hussite = {
+		declare_war_in_regency = yes	  
 		color = { 244 55 9 }
 		icon = 22
 
@@ -384,6 +386,7 @@ christian = {
 	}
 	
 	protestant = {
+		declare_war_in_regency = yes
 		color = { 0 0 178 }
 		icon = 2
 
@@ -522,6 +525,7 @@ christian = {
 	}
 
 	reformed = {
+		declare_war_in_regency = yes
 		color = { 76 76 229 }
 		icon = 3
 		allowed_conversion = {
@@ -641,6 +645,7 @@ christian = {
 	}
 
 	orthodox = {
+		declare_war_in_regency = yes
 		color = { 178 127 0 }
 		icon = 4
 		country = {
@@ -775,6 +780,7 @@ christian = {
 	}
 	
 	coptic = {
+		declare_war_in_regency = yes
 	
 		flags_with_emblem_percentage = 20
 		flag_emblem_index_range = { 1 4 }
@@ -1113,6 +1119,7 @@ muslim = {
 	}
 	
 	sunni = {
+		declare_war_in_regency = yes
 		color = { 0 153 0 }
 		icon = 5
 		country = {
@@ -1133,6 +1140,7 @@ muslim = {
 	}
 
 	shiite = {
+		declare_war_in_regency = yes
 		color = { 0 204 0 }
 		icon = 6
 		country = {
@@ -1153,6 +1161,7 @@ muslim = {
 	}
 	
 	ibadi = {
+		declare_war_in_regency = yes
 		color = { 0 102 0 }
 		icon = 16
 		country = {
@@ -1178,11 +1187,13 @@ muslim = {
 }
 
 eastern = {
+	defender_of_faith = yes
 
 	flags_with_emblem_percentage = 33
 	flag_emblem_index_range = { 58 80 }
 
 	buddhism = { #Theravada
+		declare_war_in_regency = yes
 		color = { 204 76 0 }
 		icon = 24
 		allowed_conversion = {
@@ -1245,6 +1256,7 @@ eastern = {
 	}
 	
 	mahayana = {
+		declare_war_in_regency = yes
 		color = { 204 76 127 }
 		icon = 23
 		allowed_conversion = {
@@ -1276,6 +1288,7 @@ eastern = {
 	}
 
 	confucianism = {
+		declare_war_in_regency = yes
 		color = { 214 229 140 }
 		icon = 9
 		country = {
@@ -1291,6 +1304,7 @@ eastern = {
 	}
 
 	shinto = {
+		declare_war_in_regency = yes
 		color = { 204 0 0 }
 		icon = 10
 		country = {
@@ -1315,11 +1329,13 @@ eastern = {
 }
 
 dharmic = {
+	defender_of_faith = yes
 
 	flags_with_emblem_percentage = 33
 	flag_emblem_index_range = { 61 82 } #Many shared with Eastern
 
 	hinduism = {
+		declare_war_in_regency = yes
 		color = { 0 204 204 }
 		icon = 8
 		allowed_conversion = {
@@ -1351,6 +1367,7 @@ dharmic = {
 	}
 
 	sikhism = {
+		declare_war_in_regency = yes
 		color = { 0 153 153 }
 		icon = 15
 		allowed_conversion = {
@@ -1391,11 +1408,13 @@ dharmic = {
 }
 
 pagan = {
+	defender_of_faith = yes
 
 	flags_with_emblem_percentage = 10
 	flag_emblem_index_range = { 83 96 }
 
 	animism = {
+		declare_war_in_regency = yes
 		color = { 127 0 0 }
 		icon = 11
 		country = {
@@ -1413,6 +1432,7 @@ pagan = {
 		heretic = { SNAKE_CLAN }
 	}
 	shamanism = { #Fetishism, tag kept to avoid breaking saves.
+		declare_war_in_regency = yes
 		color = { 127 76 76 }
 		icon = 12
 		country = {
@@ -1431,6 +1451,7 @@ pagan = {
 		heretic = { GOAT_SKULL }
 	}
 	totemism = {
+		declare_war_in_regency = yes
 		color = { 127 115 115 }
 		icon = 13
 		country = {
@@ -1449,6 +1470,7 @@ pagan = {
 	}
 	
 	inti = {
+		declare_war_in_regency = yes
 		color = { 64 115 115 }
 		icon = 18
 		country = {
@@ -1473,6 +1495,7 @@ pagan = {
 	}
 	
 	nahuatl = {
+		declare_war_in_regency = yes
 		color = { 64 115 64 }
 		icon = 17
 		country = {
