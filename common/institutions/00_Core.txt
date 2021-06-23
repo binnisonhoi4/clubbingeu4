@@ -60,7 +60,7 @@ feudalism = {
 					culture = omani_culture
 					culture = yemeni_culture
 					culture = swahili
-					culture = uzbehk
+					culture = uzbek
 					area = ningguta_area
 					area = jilin_area
 					culture_group = byzantine
@@ -107,6 +107,8 @@ feudalism = {
 					technology_group = south_american
 				}
 			}
+			owner = {
+				tag = SHY
 			AND = {
 				is_year = 1600
 				owner = {
