@@ -3829,7 +3829,9 @@ on_province_owner_change = {
 			fort_level = 2
 		}
 		set_province_flag = PR_new_conquest_fort_delay
+	}
 }
+
 
 # country
 on_parliament_debate_failed = {
