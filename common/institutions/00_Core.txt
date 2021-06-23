@@ -109,6 +109,7 @@ feudalism = {
 			}
 			owner = {
 				tag = SHY
+				}
 			AND = {
 				is_year = 1600
 				owner = {
