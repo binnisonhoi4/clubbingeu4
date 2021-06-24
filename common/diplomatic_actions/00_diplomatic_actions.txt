@@ -85,8 +85,19 @@
 # ask_for_tributary_state_action
 # knowledge_sharing
 
-
-
+declarewar = {
+	condition = {
+		tooltip = PR_tooltip_cn_war
+		potential = {
+			is_colonial_nation = yes
+		}
+		allow = {
+			NOT = {
+				ROOT = { is_colonial_nation_of = FROM }
+			}
+		}
+	}
+}
 
 royal_marriage = {
 	condition = {
@@ -171,6 +182,9 @@ vassalaction = {
 		potential = {
 		}
 		allow = {
+			FROM = { 
+				ai = yes
+			}
 			alliance_with = FROM
 			FROM = {
 				has_opinion = {
