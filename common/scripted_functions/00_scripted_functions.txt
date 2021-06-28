@@ -129,7 +129,6 @@ can_move_capital = {
 				}
 			}
 		}
-	}
 }
 
 can_move_trade_port = {
