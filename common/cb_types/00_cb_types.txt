@@ -35,9 +35,6 @@ cb_restore_personal_union = {
 			}
 			is_subject = no
 		}
-		FROM = {
-			ai = yes
-		}
 	}
 
 	war_goal = take_capital_personal_union
@@ -120,12 +117,6 @@ cb_vassalize_mission = {
 
 	is_triggered_only = yes
 	months = 120
-	
-	prerequisites = {
-		FROM = {
-			ai = yes
-		}
-	}
 
 	war_goal = take_capital_vassalize
 }
@@ -375,7 +366,6 @@ cb_colonial_independance_war = {
 	independence = yes
 
 	prerequisites = {
-		always = no
 		is_subject = yes
 		is_colonial_nation_of = FROM
 	}
@@ -1116,9 +1106,6 @@ cb_humiliate_rotw = {
 		ai = no
 		is_rival = FROM
 		is_revolutionary = no
-		FROM = {
-			ai = yes
-		}
 	}
 
 	attacker_disabled_po = {
@@ -1235,9 +1222,6 @@ cb_force_tributary = {
 		is_emperor_of_china = yes
 		FROM = { is_subject = no }
 		is_neighbor_of = FROM
-		FROM = {
-			ai = yes
-		}
 	}
 	
 	war_goal = take_capital_force_tributary
