@@ -168,7 +168,6 @@ can_colonize_province = {
 				}
 			}
 		}
-	}
 }
 
 can_colonize_province_siberian_frontier = {
