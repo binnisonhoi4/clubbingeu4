@@ -14628,7 +14628,7 @@ CLI_ideas = {
 
 WES_ideas = {
 	start = {
-		inf_power = 0.05
+		inf_power = 0.10
 		land_forcelimit_modifier = 0.2
 	}
 	bonus = {
@@ -14654,7 +14654,7 @@ WES_ideas = {
 		same_culture_advisor_cost = -0.25
 	}
 	wes_taxation = {
-		global_trade_goods_size_modifier = 0.1
+		global_trade_goods_size_modifier = 0.2
 	}
 	wes_enlightenment = {
 		land_morale 0.10
