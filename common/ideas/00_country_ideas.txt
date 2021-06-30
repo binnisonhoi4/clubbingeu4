@@ -14822,3 +14822,41 @@ ICE_ideas = {
 		culture_conversion_cost = -0.2
 	}
 }
+
+HOL_ideas = {
+	start = {
+		land_moral = 0.10
+		diplomatic_reputation = 1
+	}
+	
+	bonus = {
+		global_trade_goods_size_modifier = 0.15
+	}	
+
+	trigger = {
+		tag = HOL
+	}
+	free = yes
+	
+	hol_grand_council = {
+		prestige = 1
+	}
+	hol_neutral_grounds = {
+		merc_maintenance_modifier = -0.15
+	}
+	hol_home_of_calvin = {
+		mercenary_manpower= 0.50
+	}
+	hol_spiritual_leader = {
+		discipline = 0.05
+	}
+	hol_calvins_laws = {
+		trade_efficiency = 0.1
+	}
+	hol_unconquerable_city = {
+		tolerance_heretic = 2
+	}
+	hol_armed_neutrality = {
+		global_manpower_modifier = 0.25
+	}
+}
