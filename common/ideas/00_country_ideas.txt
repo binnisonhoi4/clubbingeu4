@@ -1166,11 +1166,11 @@ HAB_ideas = {
 	}
 	military_border = {
 		fort_defense = 0.15
-		fort_maintenance_modifier = -0.10
+		global_manpower_modifier = 0.15
 	}
 	fugger_banks = {
 		inflation_reduction = 0.05
-		interest = -0.5
+		interest = -0.1
 	}
 	habsburg_dominance = {
 		diplomatic_reputation = 2
