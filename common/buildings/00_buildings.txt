@@ -32,7 +32,7 @@ marketplace = {
 	time = 12
 
 	modifier = {
-		province_trade_power_modifier = 0.5
+		province_trade_power_modifier = 0.7
 	}
 
 	ai_will_do = {
