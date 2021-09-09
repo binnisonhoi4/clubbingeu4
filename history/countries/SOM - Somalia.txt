@@ -16,3 +16,9 @@ religious_school = shafii_school
 	}
 	add_piety = 0.75
 }
+
+		dip = 6
+		mil = 6
+		adm = 6
+	}
+}
