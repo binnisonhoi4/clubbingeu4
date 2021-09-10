@@ -1,6 +1,6 @@
-version="1.30.4"
+version="1.31.5"
 tags={
 	"Balance"
 }
 name="clubbingeu4"
-supported_version="1.30.4"
+supported_version="1.31.5"
