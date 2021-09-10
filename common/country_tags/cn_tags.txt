@@ -1,3 +1,0 @@
-NEG = "countries/NewEngland.txt"
-BLV = "countries/Bolivia.txt"
-CUL = "countries/Columbia.txt"
